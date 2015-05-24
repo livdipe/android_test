@@ -34,4 +34,19 @@ android {
     lintOptions {
         abortOnError false
     }
+
+    signingConfigs {
+        myConfig{
+            storeFile file("gradle.keystore")
+            storePassword "gradle"
+            keyAlias "gradle"
+            keyPassword "gradle"
+        }
+    }
+
+    buildTypes {
+        release{
+            signingConfig signingConfigs.myConfig
+        }
+    }
 }
