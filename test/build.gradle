@@ -39,7 +39,7 @@ android {
         myConfig{
             storeFile file("gradle.keystore")
             storePassword "gradle"
-            keyAlias "gradle"
+            keyAlias "alias.keystore"
             keyPassword "gradle"
         }
     }
